@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using MyBox;
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private  List<FichaData> level01;
-    [SerializeField] private  List<FichaData> level02;
-    [SerializeField] private  List<FichaData> level03;
+    
     [SerializeField] private GameObject ficha;
+
+    public CollectionWrapper<FichaData>[] Levels;
 
    //private List<FichaData>[] levels = new List<FichaData>[] { new List<FichaData>};
 

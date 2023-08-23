@@ -331,6 +331,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9c541c904504d4b8763fa33593e95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ficha: {fileID: 0}
+  Levels:
+  - Value:
+    - {fileID: 11400000, guid: 8068109c6aaabae4a85feae0349e6ee0, type: 2}
+    - {fileID: 11400000, guid: bcf033161392ceb439f1c4340d955110, type: 2}
+    - {fileID: 11400000, guid: e47424aebba71f84c8a5c5a68f3029f3, type: 2}
+  - Value:
+    - {fileID: 11400000, guid: e09265010f2807645a1d049589188e6f, type: 2}
 --- !u!4 &1140334644
 Transform:
   m_ObjectHideFlags: 0
