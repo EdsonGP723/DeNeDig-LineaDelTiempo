@@ -1,4 +1,4 @@
 public class Globals 
 {
-    public static int Score;
+    public static float Score;
 }

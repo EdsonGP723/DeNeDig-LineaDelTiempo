@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    private float delay = 30;
+    public float delay = 30;
     private bool _timmerIsRunning = false;
     public Text timer;
     void Start(){
