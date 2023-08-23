@@ -17,20 +17,20 @@ public class Timer : MonoBehaviour
     {
         DisplayTime(delay);
         if (_timmerIsRunning == true){
-        if (delay > 0)
+        if (delay < 5)
         {
-            delay -= Time.deltaTime;
+            delay += Time.deltaTime;
         }
         else {
             _timmerIsRunning = false;
-            delay = 0;
+            delay = 5;
         }
         }
         
     }
 
     private void DisplayTime(float timeToDisplay){
-        timeToDisplay += 1;
+        timeToDisplay -= 1;
         float minutes = Mathf.FloorToInt(delay/60);
         float seconds = Mathf.FloorToInt(delay%60);
         timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
