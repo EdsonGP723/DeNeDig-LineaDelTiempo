@@ -252,6 +252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9c541c904504d4b8763fa33593e95a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LevelIndex: 0
+  fichasCount: 0
   fichaPrefab: {fileID: 1079817301007331852, guid: 4bc5d4cb77e0a044aabe9b2c6500817e, type: 3}
   Level01:
   - {fileID: 11400000, guid: 8068109c6aaabae4a85feae0349e6ee0, type: 2}
@@ -259,11 +261,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e47424aebba71f84c8a5c5a68f3029f3, type: 2}
   - {fileID: 11400000, guid: e09265010f2807645a1d049589188e6f, type: 2}
   - {fileID: 11400000, guid: 4c38e939ed44f5d439a7e5801af8e2fe, type: 2}
+  - {fileID: 11400000, guid: 2a6ce0938312ede4f8d1420be76fa89e, type: 2}
+  - {fileID: 11400000, guid: 58d4ccce1fe5bb741811af1db8d4e72d, type: 2}
   Level02: []
   Level03: []
-  _LevelIndex: 0
-  spawnerPosition: {x: 0, y: 0}
-  spaceBetween: 0
+  ActualFichas: []
 --- !u!114 &237411635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +286,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237411628}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c730e637770cb2947b71950b68912065, type: 3}
   m_Name: 
