@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     public List<FichaData> ActualFichas = new List<FichaData>();
 
- 
+    public DropSlot[] slots;
    
    
 
@@ -79,9 +79,15 @@ public class GameManager : MonoBehaviour
         {
             ActualFichas.Add(sortedList[i]);
         }
+        AsignSlots();
     }
 
-  
+    public void AsignSlots(){
+        for (int i = 0; i <= slots.Length - 1; i++){
+            slots[i].year = ActualFichas[i].Year;
+        } 
+        
+    }
   
 
 
