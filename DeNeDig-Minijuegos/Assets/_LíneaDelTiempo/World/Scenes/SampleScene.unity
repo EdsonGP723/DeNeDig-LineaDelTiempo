@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
+  limitTime: 5
   timer: {fileID: 235634300}
 --- !u!1 &1663238361
 GameObject:

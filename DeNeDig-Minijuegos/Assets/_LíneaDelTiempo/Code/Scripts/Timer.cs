@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float delay;
+    public float limitTime;
     private bool _timmerIsRunning = false;
     public Text timer;
     void Start(){
@@ -17,13 +18,13 @@ public class Timer : MonoBehaviour
     {
         DisplayTime(delay);
         if (_timmerIsRunning == true){
-        if (delay < 5)
+        if (delay < limitTime)
         {
             delay += Time.deltaTime;
         }
         else {
             _timmerIsRunning = false;
-            delay = 5;
+            delay = limitTime;
         }
         }
         
