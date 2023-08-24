@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         
 
-        for (int i = 0; i <= 4; i++)
+        for (int i = 0; i <= fichasCount-1; i++)
         {
             var actualObject = Instantiate(fichaPrefab,transform).GetComponent<Ficha>();  
             

@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-    public Transform origin;
+   
 
     public int year;
 
@@ -14,7 +14,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
 
     private void Start()
     {
-        origin = GameObject.Find("ItemDraggerParent").GetComponent<Transform>();
+        
     }
     public void OnDrop(PointerEventData eventData)
     {
@@ -42,10 +42,14 @@ public class DropSlot : MonoBehaviour, IDropHandler
         if (item != null && item.transform.parent != transform)
         {
             Debug.Log("Remover");
+            
+           
             item = null;
             item = DragHandler.objBeingDraged;
+            if (item == null) return;
             item.transform.SetParent(DragHandler.objBeingDraged.transform);
-            
+
+
         }
     }
 }

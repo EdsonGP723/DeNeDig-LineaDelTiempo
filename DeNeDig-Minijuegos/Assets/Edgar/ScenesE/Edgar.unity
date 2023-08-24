@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _LevelIndex: 0
-  fichasCount: 0
+  fichasCount: 5
   fichaPrefab: {fileID: 1079817301007331852, guid: 4bc5d4cb77e0a044aabe9b2c6500817e, type: 3}
   Level01:
   - {fileID: 11400000, guid: 8068109c6aaabae4a85feae0349e6ee0, type: 2}
