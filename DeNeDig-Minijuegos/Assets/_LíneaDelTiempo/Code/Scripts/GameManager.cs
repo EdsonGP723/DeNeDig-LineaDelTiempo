@@ -54,13 +54,13 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i <= fichas.Count-1; i++)
         {
-            var actualObject = Instantiate(fichaPrefab).GetComponent<Ficha>();  
+            var actualObject = Instantiate(fichaPrefab,transform).GetComponent<Ficha>();  
             
             actualObject._FichaData = fichas[i];
 
-            actualObject.transform.position = new Vector3(spawnerPosition.x,spawnerPosition.y);
+           // actualObject.transform.position = new Vector3(spawnerPosition.x,spawnerPosition.y);
 
-            spawnerPosition.x += spaceBetween;
+            //spawnerPosition.x += spaceBetween;
         }
     }
 

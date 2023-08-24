@@ -6,7 +6,12 @@ using UnityEngine.EventSystems;
 public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
+    public Transform origin;
 
+    private void Start()
+    {
+        origin = GameObject.Find("ItemDraggerParent").GetComponent<Transform>();
+    }
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Entro");
@@ -17,15 +22,10 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item.transform.SetParent(transform);
             item.transform.position = transform.position;
         }
+        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Slot"))
-        {
-            Debug.Log("SI");
-        }
-    }
+  
 
     private void Update()
     {
@@ -33,6 +33,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
         {
             Debug.Log("Remover");
             item = null;
+            
         }
     }
 }
