@@ -5,14 +5,14 @@ using UnityEngine;
 public class FichaData : ScriptableObject
 {
     [SerializeField] private int level;
-    [SerializeField] private int index;
+    [SerializeField] private int year;
     [SerializeField] private string title;
     [SerializeField] private string description;
     [SerializeField] private Sprite image; 
 
     public int Level { get { return level; } }
 
-    public int Index { get { return index; } }
+    public int Year { get { return year; } }
 
     public string Title { get { return title; } }
 

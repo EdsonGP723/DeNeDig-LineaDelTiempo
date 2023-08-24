@@ -8,7 +8,7 @@ public class Ficha : MonoBehaviour
 {
     private int level;
 
-    public int index;
+    public int year;
 
     private string title;
 
@@ -37,7 +37,7 @@ public class Ficha : MonoBehaviour
     void GetData()
     {
         level = _FichaData.Level;
-        index = _FichaData.Index;
+        year = _FichaData.Year;
         title = _FichaData.Title;
         description = _FichaData.Description;
         image = _FichaData.Image;

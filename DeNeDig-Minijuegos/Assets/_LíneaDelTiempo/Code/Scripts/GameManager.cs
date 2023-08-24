@@ -6,7 +6,11 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
-    
+    public int _LevelIndex;
+
+    [SerializeField] private int fichasCount;
+
+
     [SerializeField] private GameObject fichaPrefab;
 
     [SerializeField] private List<FichaData> Level01 = new List<FichaData>();
@@ -15,11 +19,11 @@ public class GameManager : MonoBehaviour
 
     private List<List<FichaData>> LevelsContainer= new List<List<FichaData>>();
 
-    public int _LevelIndex;
+    public List<FichaData> ActualFichas = new List<FichaData>();
 
-    [SerializeField] private Vector2 spawnerPosition;
-    [SerializeField] private float spaceBetween;
-    //private List<FichaData>[] levels = new List<FichaData>[] { new List<FichaData>};
+ 
+   
+   
 
     private void Awake()
     {
@@ -28,7 +32,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GetLevels();
-        SortFichas();
+        GenerateFichas();
     }
 
 
@@ -43,7 +47,7 @@ public class GameManager : MonoBehaviour
         LevelsContainer.Add(Level02);
         LevelsContainer.Add(Level03);
     }
-    void SortFichas()
+    void GenerateFichas()
     {
         var actualLevel = LevelsContainer[_LevelIndex];
 
@@ -52,15 +56,28 @@ public class GameManager : MonoBehaviour
 
         
 
-        for (int i = 0; i <= fichas.Count-1; i++)
+        for (int i = 0; i <= 4; i++)
         {
             var actualObject = Instantiate(fichaPrefab,transform).GetComponent<Ficha>();  
             
             actualObject._FichaData = fichas[i];
 
-           // actualObject.transform.position = new Vector3(spawnerPosition.x,spawnerPosition.y);
+            ActualFichas.Add(actualObject._FichaData);
 
-            //spawnerPosition.x += spaceBetween;
+        }
+
+        SortFichas();
+    }
+
+    void SortFichas()
+    {
+        var sortedList = ActualFichas.OrderByDescending(x => x.Year).ToList();
+
+        ActualFichas.Clear();
+        
+        for(int i = 0 ; i  <= sortedList.Count-1; i++)
+        {
+            ActualFichas.Add(sortedList[i]);
         }
     }
 
