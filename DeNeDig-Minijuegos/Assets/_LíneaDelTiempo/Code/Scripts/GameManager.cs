@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MyBox;
+using System;
+using System.Linq;
+
 public class GameManager : MonoBehaviour
 {
     
     [SerializeField] private GameObject fichaPrefab;
 
-    public CollectionWrapper<FichaData>[] Levels;
+    [SerializeField] private List<FichaData> Level01 = new List<FichaData>();
+    [SerializeField] private List<FichaData> Level02 = new List<FichaData>();
+    [SerializeField] private List<FichaData> Level03 = new List<FichaData>();
 
-    public int _Level;
+    private List<List<FichaData>> LevelsContainer= new List<List<FichaData>>();
+
+    public int _LevelIndex;
 
     [SerializeField] private Vector2 spawnerPosition;
     [SerializeField] private float spaceBetween;
@@ -21,6 +27,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        GetLevels();
         SortFichas();
     }
 
@@ -29,13 +36,23 @@ public class GameManager : MonoBehaviour
     {
 
     }
+
+    void GetLevels()
+    {
+        LevelsContainer.Add(Level01);
+        LevelsContainer.Add(Level02);
+        LevelsContainer.Add(Level03);
+    }
     void SortFichas()
     {
-        var fichas = Levels[_Level].Value;
+        var actualLevel = LevelsContainer[_LevelIndex];
 
-     
+
+        var fichas = actualLevel.OrderBy(a=>Guid.NewGuid()).ToList();
+
         
-        for(int i = 0; i <= fichas.Length-1; i++)
+
+        for (int i = 0; i <= fichas.Count-1; i++)
         {
             var actualObject = Instantiate(fichaPrefab).GetComponent<Ficha>();  
             
