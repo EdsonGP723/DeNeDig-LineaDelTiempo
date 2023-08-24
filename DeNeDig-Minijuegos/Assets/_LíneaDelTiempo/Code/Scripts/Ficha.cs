@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Ficha : MonoBehaviour
 {
@@ -17,9 +18,9 @@ public class Ficha : MonoBehaviour
 
     public FichaData _FichaData;
 
-    [SerializeField] private TextMeshPro titleLabel;
-    [SerializeField] private TextMeshPro descriptionLabel;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private TextMeshProUGUI titleLabel;
+    [SerializeField] private TextMeshProUGUI descriptionLabel;
+    [SerializeField] private  Image sourceImage;
     void Start()
     {
         GetData();
@@ -31,7 +32,7 @@ public class Ficha : MonoBehaviour
     {
         titleLabel.text = title;
         descriptionLabel.text = description;
-        spriteRenderer.sprite = image;
+        sourceImage.sprite = image;
     }
     void GetData()
     {
