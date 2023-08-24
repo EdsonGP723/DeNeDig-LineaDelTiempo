@@ -43,6 +43,8 @@ public class DropSlot : MonoBehaviour, IDropHandler
         {
             Debug.Log("Remover");
             item = null;
+            item = DragHandler.objBeingDraged;
+            item.transform.SetParent(DragHandler.objBeingDraged.transform);
             
         }
     }
