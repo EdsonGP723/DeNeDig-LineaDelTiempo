@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
@@ -9,7 +10,7 @@ public class Timer : MonoBehaviour
     public float delay;
     public float limitTime;
     private bool _timmerIsRunning = false;
-    public Text timer;
+    public TextMeshProUGUI timer;
     void Start(){
         _timmerIsRunning = true;
     }
