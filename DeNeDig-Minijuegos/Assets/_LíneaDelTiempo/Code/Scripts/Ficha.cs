@@ -7,7 +7,7 @@ public class Ficha : MonoBehaviour
 {
     private int level;
 
-    private int index;
+    public int index;
 
     private string title;
 
