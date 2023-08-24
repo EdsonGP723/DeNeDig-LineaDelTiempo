@@ -8,6 +8,10 @@ public class DropSlot : MonoBehaviour, IDropHandler
     public GameObject item;
     public Transform origin;
 
+    public int year;
+
+    public bool Correct = false;
+
     private void Start()
     {
         origin = GameObject.Find("ItemDraggerParent").GetComponent<Transform>();
@@ -20,6 +24,12 @@ public class DropSlot : MonoBehaviour, IDropHandler
         {
             item = DragHandler.objBeingDraged;
             item.transform.SetParent(transform);
+            if ( item.GetComponent<Ficha>().year == year){
+                Correct = true;
+            }
+            else {
+                Correct = false;
+            }
             item.transform.position = transform.position;
         }
         
