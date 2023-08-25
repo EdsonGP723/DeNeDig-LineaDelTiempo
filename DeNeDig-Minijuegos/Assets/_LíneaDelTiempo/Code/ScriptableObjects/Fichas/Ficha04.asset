@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ficha04
   m_EditorClassIdentifier: 
   level: 0
-  year: 3
-  title: Ficha04
-  description: "Est\xE1 es la ficha04"
+  year: 1997
+  title: Fausto Celorio Mendoza
+  description: Maquina de Tortillas
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}
