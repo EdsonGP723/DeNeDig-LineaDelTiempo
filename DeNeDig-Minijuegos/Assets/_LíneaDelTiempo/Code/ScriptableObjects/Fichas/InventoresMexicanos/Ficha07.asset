@@ -15,5 +15,6 @@ MonoBehaviour:
   level: 0
   year: 2003
   title: "Manuel R. Guti\xE9rrez Novelo"
-  description: "Televisi\xF3n 3D"
+  invention: "Televisi\xF3n 3D"
+  description: "Dise\xF1\xF3 un dispositivo llamado TD Vision. "
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

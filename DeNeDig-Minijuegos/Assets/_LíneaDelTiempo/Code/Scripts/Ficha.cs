@@ -12,6 +12,8 @@ public class Ficha : MonoBehaviour
 
     private string title;
 
+    private string invention;
+
     private string description;
 
     private Sprite image;
@@ -19,6 +21,7 @@ public class Ficha : MonoBehaviour
     public FichaData _FichaData;
 
     [SerializeField] private TextMeshProUGUI titleLabel;
+    [SerializeField] private TextMeshProUGUI inventionLabel;
     [SerializeField] private TextMeshProUGUI descriptionLabel;
     [SerializeField] private  Image sourceImage;
     void Start()
@@ -31,6 +34,7 @@ public class Ficha : MonoBehaviour
     void SetData()
     {
         titleLabel.text = title;
+        inventionLabel.text = invention;
         descriptionLabel.text = description;
         sourceImage.sprite = image;
     }
@@ -39,6 +43,7 @@ public class Ficha : MonoBehaviour
         level = _FichaData.Level;
         year = _FichaData.Year;
         title = _FichaData.Title;
+        invention = _FichaData.Invention;
         description = _FichaData.Description;
         image = _FichaData.Image;
     }
