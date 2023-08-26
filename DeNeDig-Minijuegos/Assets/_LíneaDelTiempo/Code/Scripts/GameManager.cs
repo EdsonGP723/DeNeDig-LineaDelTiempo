@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
-
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int _LevelIndex;
@@ -22,8 +22,9 @@ public class GameManager : MonoBehaviour
     public List<FichaData> ActualFichas = new List<FichaData>();
 
     public DropSlot[] slots;
-   
-   
+
+    public int Score = 0;
+    [SerializeField] private TextMeshProUGUI scoreLabel;
 
     private void Awake()
     {
@@ -89,6 +90,21 @@ public class GameManager : MonoBehaviour
         
     }
   
+
+    public void Check()
+    {
+        Score = 0;
+        for (int i = 0; i <= slots.Length - 1; i++)
+        {
+            if (slots[i].Correct)
+            {
+                Score++;
+            }
+        }
+
+        Debug.Log(Score);
+        scoreLabel.text = "Puntaje: "+Score+"/5";
+    }
 
 
 

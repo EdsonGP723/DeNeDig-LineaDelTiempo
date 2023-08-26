@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
-   
 
+    [SerializeField] private TextMeshProUGUI yearLabel;
     public int year;
 
     public bool Correct = false;
 
     private void Start()
     {
-        
+        yearLabel.text = year.ToString();
     }
     public void OnDrop(PointerEventData eventData)
     {

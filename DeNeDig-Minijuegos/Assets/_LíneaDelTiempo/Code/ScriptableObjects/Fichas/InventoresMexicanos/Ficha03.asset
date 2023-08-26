@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
-  m_Name: Ficha05
+  m_Name: Ficha03
   m_EditorClassIdentifier: 
   level: 0
-  year: 1987
-  title: "C\xE1denas Hern\xE1ndez Genaro"
-  description: Espolvoreador de insecticidas
+  year: 1994
+  title: "Filberto V\xE1zuez D\xE1vila"
+  invention: Tinta indeleble
+  description: "Esta tuvo su origen gracias a un concurso que el IFE lanz\xF3 precisamente
+    para las votaciones de ese a\xF1o."
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}
