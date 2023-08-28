@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   year: 1951
-  title: Luis Ernesto Miramontes
-  invention: Pastilla Anticonceptiva
-  description: "Lo desarroll\xF3 a\xFAn siendo estudiante y trabajador.\_"
+  title:
+  - 'Luis Ernesto Miramontes  '
+  - 'Luis Ernesto Miramontes  '
+  - 'Luis Ernesto Miramontes  '
+  invention:
+  - 'Pastilla Anticonceptiva  '
+  - Idioma 02
+  - Idioma 03
+  description:
+  - 
+  - 
+  - 
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

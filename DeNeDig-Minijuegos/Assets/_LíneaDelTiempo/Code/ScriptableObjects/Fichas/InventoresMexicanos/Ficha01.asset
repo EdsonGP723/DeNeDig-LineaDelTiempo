@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   year: 1940
-  title: "Guillermo Gonz\xE1les Camarena "
-  invention: TV a Color
-  description: "Utilizando un programa que hac\xEDa uso de colores primarios para
-    capturar y reproducir im\xE1genes."
+  title:
+  - "Guillermo Gonz\xE1les Camarena  "
+  - "Guillermo Gonz\xE1les Camarena  "
+  - "Guillermo Gonz\xE1les Camarena  "
+  invention:
+  - 'TV a Color  '
+  - Idioma 02
+  - Idioma 03
+  description: []
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

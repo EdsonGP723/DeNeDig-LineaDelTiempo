@@ -42,8 +42,8 @@ public class Ficha : MonoBehaviour
     {
         level = _FichaData.Level;
         year = _FichaData.Year;
-        title = _FichaData.Title;
-        invention = _FichaData.Invention;
+        title = _FichaData.Title[PlayerPrefs.GetInt("Idioma")];
+        invention = _FichaData.Invention[PlayerPrefs.GetInt("Idioma")];
         // description = _FichaData.Description;
         image = _FichaData.Image;
     }

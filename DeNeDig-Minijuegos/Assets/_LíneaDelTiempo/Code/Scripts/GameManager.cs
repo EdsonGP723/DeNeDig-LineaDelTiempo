@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public int Score = 0;
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
+    [SerializeField] private int idioma;
     private void Awake()
     {
         
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         GetLevels();
         GenerateFichas();
+        PlayerPrefs.SetInt("Idioma", idioma);
     }
 
 
