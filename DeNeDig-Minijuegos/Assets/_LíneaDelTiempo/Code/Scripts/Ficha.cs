@@ -22,7 +22,7 @@ public class Ficha : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI titleLabel;
     [SerializeField] private TextMeshProUGUI inventionLabel;
-    [SerializeField] private TextMeshProUGUI descriptionLabel;
+   // [SerializeField] private TextMeshProUGUI descriptionLabel;
     [SerializeField] private  Image sourceImage;
     void Start()
     {
@@ -35,7 +35,7 @@ public class Ficha : MonoBehaviour
     {
         titleLabel.text = title;
         inventionLabel.text = invention;
-        descriptionLabel.text = description;
+       // descriptionLabel.text = description;
         sourceImage.sprite = image;
     }
     void GetData()
@@ -44,9 +44,8 @@ public class Ficha : MonoBehaviour
         year = _FichaData.Year;
         title = _FichaData.Title;
         invention = _FichaData.Invention;
-        description = _FichaData.Description;
+        // description = _FichaData.Description;
         image = _FichaData.Image;
     }
 
-   
 }
