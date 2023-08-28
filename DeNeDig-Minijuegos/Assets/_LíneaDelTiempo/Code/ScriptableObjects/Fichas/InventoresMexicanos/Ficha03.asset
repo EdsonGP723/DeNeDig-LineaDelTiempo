@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   year: 1994
-  title: "Filberto V\xE1zuez D\xE1vila"
-  invention: Tinta indeleble
-  description: "Esta tuvo su origen gracias a un concurso que el IFE lanz\xF3 precisamente
-    para las votaciones de ese a\xF1o."
+  title:
+  - "Filberto V\xE1zuez D\xE1vila  "
+  - "Filberto V\xE1zuez D\xE1vila  "
+  - "Filberto V\xE1zuez D\xE1vila  "
+  invention:
+  - 'Tinta indeleble  '
+  - Idioma 02
+  - Idioma 03
+  description:
+  - 
+  - 
+  - 
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

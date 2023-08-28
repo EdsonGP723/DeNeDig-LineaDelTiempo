@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Ficha04
   m_EditorClassIdentifier: 
   level: 0
-  year: 1997
-  title: Fausto Celorio Mendoza
-  invention: Maquina de Tortillas
-  description: "La m\xE1quina es capaz de generar 16,000 tortillas por d\xEDa."
+  year: 1992
+  title:
+  - "Bocanegra S\xE1nchez Ra\xFAl  "
+  - "Bocanegra S\xE1nchez Ra\xFAl  "
+  - "Bocanegra S\xE1nchez Ra\xFAl  "
+  invention:
+  - "Aparato para la purificaci\xF3n de mercurio "
+  - Idioma 02
+  - Idioma 03
+  description: []
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

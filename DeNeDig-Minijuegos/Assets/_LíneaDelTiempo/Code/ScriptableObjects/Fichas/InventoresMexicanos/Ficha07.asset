@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Ficha07
   m_EditorClassIdentifier: 
   level: 0
-  year: 2003
-  title: "Manuel R. Guti\xE9rrez Novelo"
-  invention: "Televisi\xF3n 3D"
-  description: "Dise\xF1\xF3 un dispositivo llamado TD Vision. "
+  year: 2002
+  title:
+  - "V\xEDctor Manuel Casta\xF1o "
+  - "V\xEDctor Manuel Casta\xF1o "
+  - "V\xEDctor Manuel Casta\xF1o "
+  invention:
+  - 'Pintura antigraffiti  '
+  - Idioma 02
+  - Idioma 03
+  description: []
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}
