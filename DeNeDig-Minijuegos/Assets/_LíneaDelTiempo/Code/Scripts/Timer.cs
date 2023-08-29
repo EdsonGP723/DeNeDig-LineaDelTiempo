@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
         if (delay < limitTime)
         {
             delay += Time.deltaTime;
+            Globals.Score -= Time.deltaTime;
         }
         else {
             _timmerIsRunning = false;
