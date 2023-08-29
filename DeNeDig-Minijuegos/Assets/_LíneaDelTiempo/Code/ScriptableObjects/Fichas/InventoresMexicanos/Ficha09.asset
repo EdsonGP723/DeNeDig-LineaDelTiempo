@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff499afd6cd9de742aa568928459b35c, type: 3}
-  m_Name: Ficha06
+  m_Name: Ficha09
   m_EditorClassIdentifier: 
   level: 0
-  year: 1944
+  year: 1995
   title:
-  - "C\xE1denas Hern\xE1ndez Genaro  "
-  - "C\xE1denas Hern\xE1ndez Genaro  "
-  - "C\xE1denas Hern\xE1ndez Genaro  "
+  - 'Angel Javier Grande Tejada '
+  - 'Angel Javier Grande Tejada '
+  - 'Angel Javier Grande Tejada '
   invention:
-  - 'Espolvoreador de insecticidas  '
-  - Idioma 02
-  - Idioma 03
-  description:
-  - Con el uso de sacos en el mar con arena y cemento
+  - "Escudo anti mot\xEDn"
   - idioma 02
   - idioma 03
-  image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}
+  description:
+  - "Este escudo est\xE1 hecho de materiales resistentes y duraderos, que pueden
+    soportar impactos fuertes y m\xFAltiples"
+  - idioma 02
+  - idioma 03
+  image: {fileID: 0}
