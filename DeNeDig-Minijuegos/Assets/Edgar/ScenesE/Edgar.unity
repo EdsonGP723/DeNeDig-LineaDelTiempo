@@ -369,10 +369,8 @@ MonoBehaviour:
   - {fileID: 1026738032}
   - {fileID: 1368860699}
   - {fileID: 294680516}
-  Score: 0
-
   aciertosLabel: {fileID: 1127397078}
-
+  Score: 0
   time: {fileID: 237411636}
   scoreLabel: {fileID: 1822609372}
   idioma: 0
