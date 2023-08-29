@@ -23,7 +23,12 @@ public class GameManager : MonoBehaviour
 
     public DropSlot[] slots;
 
+<<<<<<< Updated upstream
     public int Score = 0;
+=======
+    public float Score = 0;
+    [SerializeField] private TextMeshProUGUI aciertosLabel;
+>>>>>>> Stashed changes
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
@@ -33,16 +38,14 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        
         GetLevels();
         GenerateFichas();
         PlayerPrefs.SetInt("Idioma", idioma);
     }
 
 
-    void Update()
-    {
-
-    }
+   
 
     void GetLevels()
     {
@@ -105,7 +108,12 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log(Score);
+<<<<<<< Updated upstream
         scoreLabel.text = "Puntaje: "+Score+"/5";
+=======
+        aciertosLabel.text = "Aciertos: "+Score + "/5";
+        scoreLabel.text = "Puntaje: "+FinalScore;
+>>>>>>> Stashed changes
     }
 
 
