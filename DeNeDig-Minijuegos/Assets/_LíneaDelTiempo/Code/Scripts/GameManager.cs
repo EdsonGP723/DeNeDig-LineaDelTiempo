@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public DropSlot[] slots;
 
     public float Score = 0;
+
+    [SerializeField] private Timer time;
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
@@ -95,6 +97,7 @@ public class GameManager : MonoBehaviour
 
     public void Check()
     {
+        time._timmerIsRunning = false;
         Score = 0;
         for (int i = 0; i <= slots.Length - 1; i++)
         {

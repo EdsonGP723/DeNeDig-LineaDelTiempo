@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     public float delay;
     public float limitTime;
-    private bool _timmerIsRunning = false;
+    public bool _timmerIsRunning = false;
     public TextMeshProUGUI timer;
     void Start(){
         _timmerIsRunning = true;
