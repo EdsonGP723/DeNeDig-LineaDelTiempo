@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public DropSlot[] slots;
 
-    public int Score = 0;
+    public float Score = 0;
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
