@@ -103,9 +103,9 @@ public class GameManager : MonoBehaviour
                 Score++;
             }
         }
-
+        var FinalScore = Score * Globals.Score;
         Debug.Log(Score);
-        scoreLabel.text = "Puntaje: "+Score+"/5";
+        scoreLabel.text = "Puntaje: "+FinalScore;
     }
 
 
