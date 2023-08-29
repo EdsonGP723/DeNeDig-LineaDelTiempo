@@ -370,7 +370,10 @@ MonoBehaviour:
   - {fileID: 1368860699}
   - {fileID: 294680516}
   Score: 0
+
   aciertosLabel: {fileID: 1127397078}
+
+  time: {fileID: 237411636}
   scoreLabel: {fileID: 1822609372}
   idioma: 0
 --- !u!114 &237411635
@@ -400,6 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 0
   limitTime: 80
+  _timmerIsRunning: 0
   timer: {fileID: 1009875660}
 --- !u!1 &294680512
 GameObject:

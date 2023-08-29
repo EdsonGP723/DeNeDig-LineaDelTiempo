@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     public float delay;
     public float limitTime;
-    private bool _timmerIsRunning = false;
+    public bool _timmerIsRunning = false;
     public TextMeshProUGUI timer;
     void Start(){
         Globals.Score = 100;
@@ -23,6 +23,7 @@ public class Timer : MonoBehaviour
         if (delay < limitTime)
         {
             delay += Time.deltaTime;
+            Globals.Score -= Time.deltaTime;
         }
         else {
             _timmerIsRunning = false;

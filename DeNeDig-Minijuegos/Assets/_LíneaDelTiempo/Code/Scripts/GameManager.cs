@@ -23,12 +23,16 @@ public class GameManager : MonoBehaviour
 
     public DropSlot[] slots;
 
-<<<<<<< Updated upstream
-    public int Score = 0;
-=======
-    public float Score = 0;
+
+    
+
+    
     [SerializeField] private TextMeshProUGUI aciertosLabel;
->>>>>>> Stashed changes
+
+    public int Score = 0;
+
+    [SerializeField] private Timer time;
+
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
@@ -98,6 +102,7 @@ public class GameManager : MonoBehaviour
 
     public void Check()
     {
+        time._timmerIsRunning = false;
         Score = 0;
         for (int i = 0; i <= slots.Length - 1; i++)
         {
@@ -106,14 +111,17 @@ public class GameManager : MonoBehaviour
                 Score++;
             }
         }
+        var FinalScore = Score * Globals.Score;
+       
 
-        Debug.Log(Score);
-<<<<<<< Updated upstream
-        scoreLabel.text = "Puntaje: "+Score+"/5";
-=======
+
+
         aciertosLabel.text = "Aciertos: "+Score + "/5";
         scoreLabel.text = "Puntaje: "+FinalScore;
->>>>>>> Stashed changes
+
+
+        scoreLabel.text = "Puntaje: "+FinalScore;
+
     }
 
 
