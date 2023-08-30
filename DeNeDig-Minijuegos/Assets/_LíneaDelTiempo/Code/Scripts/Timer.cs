@@ -9,9 +9,10 @@ public class Timer : MonoBehaviour
 {
     public float delay;
     public float limitTime;
-    private bool _timmerIsRunning = false;
+    public bool _timmerIsRunning = false;
     public TextMeshProUGUI timer;
     void Start(){
+        Globals.Score = 100;
         _timmerIsRunning = true;
     }
     // Update is called once per frame
