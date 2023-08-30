@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/SampleScene.unity"
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/Menu.unity"
+    guid: 418a8e6a54ba23244b238c2ee8cb86f9
+  - enabled: 1
+    path: Assets/Edgar/ScenesE/Edgar.unity
+    guid: 6595e1c5b5570a645b970a6852dde3fc
   m_configObjects: {}
