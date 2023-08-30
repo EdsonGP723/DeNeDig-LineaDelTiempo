@@ -23,7 +23,16 @@ public class GameManager : MonoBehaviour
 
     public DropSlot[] slots;
 
-    public float Score = 0;
+
+    
+
+    
+    [SerializeField] private TextMeshProUGUI aciertosLabel;
+
+    public int Score = 0;
+
+    [SerializeField] private Timer time;
+
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
@@ -33,16 +42,14 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        
         GetLevels();
         GenerateFichas();
         PlayerPrefs.SetInt("Idioma", idioma);
     }
 
 
-    void Update()
-    {
-
-    }
+   
 
     void GetLevels()
     {
@@ -95,6 +102,7 @@ public class GameManager : MonoBehaviour
 
     public void Check()
     {
+        time._timmerIsRunning = false;
         Score = 0;
         for (int i = 0; i <= slots.Length - 1; i++)
         {
@@ -104,8 +112,16 @@ public class GameManager : MonoBehaviour
             }
         }
         var FinalScore = Score * Globals.Score;
-        Debug.Log(Score);
+       
+
+
+
+        aciertosLabel.text = "Aciertos: "+Score + "/5";
         scoreLabel.text = "Puntaje: "+FinalScore;
+
+
+        scoreLabel.text = "Puntaje: "+FinalScore;
+
     }
 
 
