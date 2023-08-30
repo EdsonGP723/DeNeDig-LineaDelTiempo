@@ -23,7 +23,8 @@ MonoBehaviour:
   - Idioma 02
   - Idioma 03
   description:
-  - 
-  - 
-  - 
+  - Es un medicamento que contiene diversas hormonas, y se utiliza como anticonceptivo,
+    para evitar el embarazo
+  - idioma 02
+  - idioma 03
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

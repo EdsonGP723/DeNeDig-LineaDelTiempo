@@ -13,14 +13,18 @@ MonoBehaviour:
   m_Name: Ficha04
   m_EditorClassIdentifier: 
   level: 0
-  year: 1992
+  year: 2022
   title:
-  - "Bocanegra S\xE1nchez Ra\xFAl  "
-  - "Bocanegra S\xE1nchez Ra\xFAl  "
-  - "Bocanegra S\xE1nchez Ra\xFAl  "
+  - "V\xEDctor Manuel Casta\xF1o"
+  - "V\xEDctor Manuel Casta\xF1o"
+  - "V\xEDctor Manuel Casta\xF1o"
   invention:
   - "Aparato para la purificaci\xF3n de mercurio "
   - Idioma 02
   - Idioma 03
-  description: []
+  description:
+  - "Deletum 3000 tiene Sus compuestos tienen la caracter\xEDstica de que rechazan
+    el agua y el aceite"
+  - idioma 02
+  - idioma 03
   image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}

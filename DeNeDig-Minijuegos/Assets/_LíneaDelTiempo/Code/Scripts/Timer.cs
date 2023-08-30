@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public bool _timmerIsRunning = false;
     public TextMeshProUGUI timer;
     void Start(){
+        Globals.Score = 100;
         _timmerIsRunning = true;
     }
     // Update is called once per frame
