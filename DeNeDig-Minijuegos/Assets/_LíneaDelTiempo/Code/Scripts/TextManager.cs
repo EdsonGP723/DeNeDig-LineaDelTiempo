@@ -43,6 +43,7 @@ public class TextManager : MonoBehaviour
                 
                 result = data[i + PlayerPrefs.GetInt("Idioma")+1];
                 
+
             }
            
         }
