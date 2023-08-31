@@ -6,12 +6,12 @@ using TMPro;
 public class Text : MonoBehaviour
 {
     [SerializeField] int id;
-    
-    void Start()
+
+    private void OnEnable()
     {
         transform.GetComponent<TextMeshProUGUI>().text = TextManager.Instance.setText(id);
-       
     }
+   
 
   
 }

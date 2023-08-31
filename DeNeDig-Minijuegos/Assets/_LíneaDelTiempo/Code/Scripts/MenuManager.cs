@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
     public void SetUserName()
     {
         if (userNameInputField.text.Length < 5) { 
-            wariningField.text = "El nombre de usario debe tener más de 5 carácteres";
+            wariningField.gameObject.SetActive(true);
             return;
             }
         PlayerPrefs.SetString("UserName", userNameInputField.text);
