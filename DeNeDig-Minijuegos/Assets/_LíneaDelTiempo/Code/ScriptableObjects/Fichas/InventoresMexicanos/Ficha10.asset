@@ -26,4 +26,4 @@ MonoBehaviour:
   - Garantiza una mayor seguridad y comodidad al momento de llenar el tanque de gasolina
   - idioma 02
   - idioma 03
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7b767a0c7da3fb24b93ad54cc9dc7ca5, type: 3}
