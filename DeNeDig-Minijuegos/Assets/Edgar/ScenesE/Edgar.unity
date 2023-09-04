@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &109456983 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6148530824636815955, guid: f57aee6810072db47abe5b1749603056, type: 3}
-  m_PrefabInstance: {fileID: 1038519823}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &205073463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,22 +2064,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6148530824636815954, guid: f57aee6810072db47abe5b1749603056, type: 3}
   m_PrefabInstance: {fileID: 1038519823}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1138193514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109456983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b51184ba636f687439fc0f1611f559a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 4
-  limit: 0
-  _timmerIsRunning: 0
-  contador: {fileID: 1707082559}
 --- !u!1 &1184965609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +2699,7 @@ GameObject:
   - component: {fileID: 1707082558}
   - component: {fileID: 1707082560}
   - component: {fileID: 1707082559}
+  - component: {fileID: 1707082561}
   m_Layer: 5
   m_Name: contador
   m_TagString: Untagged
@@ -2744,7 +2724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104, y: -17}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 872.0898, y: 218.0224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1707082559
@@ -2844,6 +2824,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707082557}
   m_CullTransparentMesh: 1
+--- !u!114 &1707082561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707082557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51184ba636f687439fc0f1611f559a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 4
+  limit: 0
+  _timmerIsRunning: 0
+  contador: {fileID: 1707082559}
 --- !u!1 &1793743313
 GameObject:
   m_ObjectHideFlags: 0

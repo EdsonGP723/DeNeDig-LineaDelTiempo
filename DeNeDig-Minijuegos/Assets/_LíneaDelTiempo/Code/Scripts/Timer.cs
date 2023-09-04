@@ -33,10 +33,14 @@ public class Timer : MonoBehaviour
         
     }
 
-    private void DisplayTime(float timeToDisplay){
+    private void DisplayTime(float timeToDisplay) {
         timeToDisplay -= 1;
-        float minutes = Mathf.FloorToInt(delay/60);
-        float seconds = Mathf.FloorToInt(delay%60);
-        timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        float minutes = Mathf.FloorToInt(delay / 60);
+        float seconds = Mathf.FloorToInt(delay % 60);
+        if (delay < 0) { timer.text = ("00:00"); }
+        else
+        {
+            timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 }
