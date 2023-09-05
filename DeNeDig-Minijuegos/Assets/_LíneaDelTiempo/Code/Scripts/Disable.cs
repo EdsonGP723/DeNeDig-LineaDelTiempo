@@ -10,6 +10,8 @@ public class Disable : MonoBehaviour
     public float limit;
     public bool _timmerIsRunning = false;
     public TextMeshProUGUI contador;
+
+    public GameObject parent;
     public void Start(){
         
         _timmerIsRunning = true;
@@ -42,6 +44,6 @@ public class Disable : MonoBehaviour
 
     public IEnumerator Off(){
         yield return new WaitForSeconds(3);
-        this.gameObject.SetActive(false);
+        parent.SetActive(false);
     }
 }
