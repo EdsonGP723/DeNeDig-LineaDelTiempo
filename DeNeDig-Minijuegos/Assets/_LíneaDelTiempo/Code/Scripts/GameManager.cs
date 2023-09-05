@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
 
         scoreLabel.text = "Puntaje: "+FinalScore;
 
+        LeaderBoard.SetLeaderBoardEntry(PlayerPrefs.GetString("UserName"),(int)Math.Round(FinalScore));
     }
 
 
