@@ -18,6 +18,7 @@ public class MenuManager : MonoBehaviour
             return;
             }
         PlayerPrefs.SetString("UserName", userNameInputField.text);
+        Debug.Log(PlayerPrefs.GetString("UserName"));
         nextScreen.SetActive(true);
         actualScreen.SetActive(false);
     }

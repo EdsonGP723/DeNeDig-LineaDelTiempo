@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.Linq;
 using TMPro;
+using Dan.Main;
 public class GameManager : MonoBehaviour
 {
     public int _LevelIndex;
@@ -23,9 +24,6 @@ public class GameManager : MonoBehaviour
 
     public DropSlot[] slots;
 
-
-    
-
     
     [SerializeField] private TextMeshProUGUI aciertosLabel;
 
@@ -36,13 +34,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreLabel;
 
     [SerializeField] private int idioma;
+
+    private static string publicKey = "4d20065bde55aba7263e07336e9700cc9ed70e2784ecc740ae4253ae301e2e5a";
+
+    [SerializeField] private List<TextMeshProUGUI> userNames;
+    [SerializeField] private List<TextMeshProUGUI> scores;
+    [SerializeField] private TextMeshProUGUI myUserName;
+    [SerializeField] private TextMeshProUGUI myScore;
     private void Awake()
     {
         
     }
     void Start()
     {
-        
+        Debug.Log(PlayerPrefs.GetString("UserName"));
         GetLevels();
         GenerateFichas();
         PlayerPrefs.SetInt("Idioma", idioma);
@@ -102,6 +107,7 @@ public class GameManager : MonoBehaviour
 
     public void Check()
     {
+        
         time._timmerIsRunning = false;
         Score = 0;
         for (int i = 0; i <= slots.Length - 1; i++)
@@ -122,10 +128,46 @@ public class GameManager : MonoBehaviour
 
         scoreLabel.text = "Puntaje: "+FinalScore;
 
-        LeaderBoard.SetLeaderBoardEntry(PlayerPrefs.GetString("UserName"),(int)Math.Round(FinalScore));
+       SetLeaderBoardEntry(PlayerPrefs.GetString("UserName"),(int)Math.Round(FinalScore));
+       
+
+    }
+
+    public void GetLeaderBoard()
+    {
+       
+        LeaderboardCreator.GetLeaderboard(publicKey, ((msg) => {
+            for(int i = 0; i < userNames.Count; ++i)
+            {
+                
+                userNames[i].text = (msg[i].Rank +".-"+ msg[i].Username);
+                scores[i].text = msg[i].Score.ToString();
+
+               
+            }
+
+            foreach (var item in msg)
+            {
+                if (PlayerPrefs.GetString("UserName") == item.Username)
+                {
+                    myUserName.text = item.Rank + ".-" + item.Username;
+                    myScore.text = item.Score.ToString();
+                }
+            }
+        }));
+
+
+    }
+
+    public void SetLeaderBoardEntry(string username, int score)
+    {
+        LeaderboardCreator.UploadNewEntry(publicKey, username, score, ((msg) => {
+            GetLeaderBoard();
+        }));
+
+       
     }
 
 
 
-  
 }

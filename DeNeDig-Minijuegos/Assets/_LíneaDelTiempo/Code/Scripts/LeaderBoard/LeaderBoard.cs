@@ -8,14 +8,13 @@ public static class LeaderBoard
 
     private static string publicKey= "4d20065bde55aba7263e07336e9700cc9ed70e2784ecc740ae4253ae301e2e5a";
    
-    public static void GetLeaderBoard()
+    public static void GetUserName(int i)
     {
+        string userName = null;
         LeaderboardCreator.GetLeaderboard(publicKey, ((msg) => {
-            for(int i = 0; i<5; ++i)
-            {
-                Debug.Log(msg[i].Username + " : " + msg[i].Score.ToString());
-            }
+            userName = msg[i].Username;
         }));
+        
     }
 
     public static void SetLeaderBoardEntry(string username, int score)
