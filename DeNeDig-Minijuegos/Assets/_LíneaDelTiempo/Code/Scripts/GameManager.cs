@@ -41,6 +41,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<TextMeshProUGUI> scores;
     [SerializeField] private TextMeshProUGUI myUserName;
     [SerializeField] private TextMeshProUGUI myScore;
+
+    [SerializeField] private TMP_InputField userNameInputField;
+    [SerializeField] private TextMeshProUGUI wariningField;
+
+    private int FinalScore;
     private void Awake()
     {
         
@@ -117,19 +122,19 @@ public class GameManager : MonoBehaviour
                 Score++;
             }
         }
-        var FinalScore = Score * Globals.Score;
+        float finalScore = Score * Globals.Score;
        
 
 
 
         aciertosLabel.text = "Aciertos: "+Score + "/5";
-        scoreLabel.text = "Puntaje: "+FinalScore;
+        
 
 
-        scoreLabel.text = "Puntaje: "+FinalScore;
+        scoreLabel.text = "Puntaje: "+ Math.Round(finalScore);
 
-       SetLeaderBoardEntry(PlayerPrefs.GetString("UserName"),(int)Math.Round(FinalScore));
-       
+        FinalScore = ((int)finalScore);
+        GetLeaderBoard();
 
     }
 
@@ -146,14 +151,14 @@ public class GameManager : MonoBehaviour
                
             }
 
-            foreach (var item in msg)
+            /*foreach (var item in msg)
             {
                 if (PlayerPrefs.GetString("UserName") == item.Username)
                 {
                     myUserName.text = item.Rank + ".-" + item.Username;
                     myScore.text = item.Score.ToString();
                 }
-            }
+            }*/
         }));
 
 
@@ -162,10 +167,23 @@ public class GameManager : MonoBehaviour
     public void SetLeaderBoardEntry(string username, int score)
     {
         LeaderboardCreator.UploadNewEntry(publicKey, username, score, ((msg) => {
+            LeaderboardCreator.ResetPlayer();
             GetLeaderBoard();
         }));
 
        
+    }
+
+    public void SetUserName()
+    {
+        if (userNameInputField.text.Length < 5)
+        {
+            wariningField.gameObject.SetActive(true);
+            return;
+        }
+        PlayerPrefs.SetString("UserName", userNameInputField.text);
+       
+        SetLeaderBoardEntry(userNameInputField.text, FinalScore);
     }
 
 

@@ -20,10 +20,13 @@ public class AudioManager : MonoBehaviour
 	
 	AudioSource fxSource;
 
+	AudioSource narracionSource;
+
 	
 	// Aqui van todos los sonidos y musica en las librerias
 	SoundLibrary soundLibrary;
 	MusicLibrary musicLibrary;
+	NarracionLibrary narracionLibrary;
 	
 
 	
@@ -56,10 +59,13 @@ public class AudioManager : MonoBehaviour
 		musicSource.loop = MusicIsLooping; // Musica se esta loopeando
 		musicSource.playOnAwake = false;
 
+		///////////////////////////////////
+
 		
-		SetVolume(masterVolume, AudioChannel.Master);
+		/*SetVolume(masterVolume, AudioChannel.Master);
 		SetVolume(fxVolume, AudioChannel.fx);
-		SetVolume(musicVolume, AudioChannel.Music);
+		SetVolume(musicVolume, AudioChannel.Music);*/
+
 	}
 
 	//volumen de todos los elementos
@@ -87,6 +93,7 @@ public class AudioManager : MonoBehaviour
 	{
 		musicSource.clip = musicLibrary.GetClipFromName(musicName);
 		musicSource.PlayDelayed(delay);
+		SetVolume(musicVolume, AudioChannel.Music);
 	}
 
 	//Parar musica
@@ -100,6 +107,13 @@ public class AudioManager : MonoBehaviour
 	{
 		fxSource.PlayOneShot(soundLibrary.GetClipFromName(soundName), fxVolume * masterVolume);
 	}
+
+	public void PlayNarracion(int name)
+    {
+		narracionSource.PlayOneShot(narracionLibrary.GetNarracionFromName(name));
+		
+    }
+
 
 	
 }
