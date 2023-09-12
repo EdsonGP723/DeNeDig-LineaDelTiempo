@@ -127,11 +127,11 @@ public class GameManager : MonoBehaviour
 
 
 
-        aciertosLabel.text = "Aciertos: "+Score + "/5";
+        aciertosLabel.text =Score + "/5";
         
 
 
-        scoreLabel.text = "Puntaje: "+ Math.Round(finalScore);
+        scoreLabel.text = Math.Round(finalScore).ToString();
 
         FinalScore = ((int)finalScore);
         GetLeaderBoard();
@@ -144,24 +144,31 @@ public class GameManager : MonoBehaviour
         LeaderboardCreator.GetLeaderboard(publicKey, ((msg) => {
             for(int i = 0; i < userNames.Count; ++i)
             {
-                
                 userNames[i].text = (msg[i].Rank +".-"+ msg[i].Username);
-                scores[i].text = msg[i].Score.ToString();
-
-               
+                scores[i].text = msg[i].Score.ToString();             
             }
 
-            /*foreach (var item in msg)
+            
+        }));
+
+
+    }
+
+    public void GetPlayerPosition()
+    {
+        LeaderboardCreator.GetLeaderboard(publicKey, ((msg) => {
+            foreach (var item in msg)
+        {
+            if (PlayerPrefs.GetString("UserName") == item.Username)
             {
-                if (PlayerPrefs.GetString("UserName") == item.Username)
+                if (item.Rank > 5)
                 {
                     myUserName.text = item.Rank + ".-" + item.Username;
                     myScore.text = item.Score.ToString();
                 }
-            }*/
+            }
+        }
         }));
-
-
     }
 
     public void SetLeaderBoardEntry(string username, int score)
@@ -169,6 +176,7 @@ public class GameManager : MonoBehaviour
         LeaderboardCreator.UploadNewEntry(publicKey, username, score, ((msg) => {
             LeaderboardCreator.ResetPlayer();
             GetLeaderBoard();
+            GetPlayerPosition();
         }));
 
        
