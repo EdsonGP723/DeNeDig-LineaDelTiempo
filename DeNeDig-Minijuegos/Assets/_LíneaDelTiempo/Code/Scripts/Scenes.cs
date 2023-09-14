@@ -10,9 +10,11 @@ public class Scenes : MonoBehaviour
 
     public void StartCor(){
         StartCoroutine(Cambio());
+
     }
    public IEnumerator Cambio(){
         fade.SetActive(true);
+        
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(scene);
     }

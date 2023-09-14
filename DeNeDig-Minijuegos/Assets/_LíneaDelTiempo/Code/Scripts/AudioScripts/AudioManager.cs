@@ -105,6 +105,8 @@ public class AudioManager : MonoBehaviour
 	
 	public IEnumerator PlayMusicFade(string musicName, float duration)
 	{
+        
+		StartCoroutine(StopMusicFade(5f));
 		CoroutineRun = true; 
 
 		float startVolume = 0;
@@ -112,6 +114,10 @@ public class AudioManager : MonoBehaviour
 		float currentTime = 0;
 
 		musicSource.clip = musicLibrary.GetClipFromName(musicName);
+		if (musicSource)
+		{
+
+		}
 		musicSource.Play();
 
 		while (currentTime < duration)
@@ -146,6 +152,7 @@ public class AudioManager : MonoBehaviour
 		float targetVolume = 0;
 		float currentTime = 0;
 
+		
 		while (currentTime < duration)
 		{
 			currentTime += Time.deltaTime;
