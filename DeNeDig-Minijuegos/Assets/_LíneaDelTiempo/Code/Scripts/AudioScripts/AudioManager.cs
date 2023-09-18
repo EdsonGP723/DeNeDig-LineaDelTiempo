@@ -106,7 +106,8 @@ public class AudioManager : MonoBehaviour
 	public IEnumerator PlayMusicFade(string musicName, float duration)
 	{
         
-		StartCoroutine(StopMusicFade(5f));
+		StartCoroutine(StopMusicFade(1f));
+		yield return new WaitForSeconds(1.1f);
 		CoroutineRun = true; 
 
 		float startVolume = 0;
