@@ -128,8 +128,9 @@ public class GameManager : MonoBehaviour
 
 
         aciertosLabel.text =Score + "/5";
-        
 
+        AudioManager.Instance.PlaySound2D("exito");
+        AudioManager.Instance.StopMusic();
 
         scoreLabel.text = Math.Round(finalScore).ToString();
 
