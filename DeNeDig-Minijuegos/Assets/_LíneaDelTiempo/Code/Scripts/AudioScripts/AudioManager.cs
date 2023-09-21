@@ -197,4 +197,9 @@ public class AudioManager : MonoBehaviour
 	{
 		AudioSource.PlayClipAtPoint(soundLibrary.GetClipFromName(soundName), soundPosition, fxVolume * masterVolume);
 	}
+
+	public void StopSound()
+    {
+		fxSource.Stop();
+	}
 }

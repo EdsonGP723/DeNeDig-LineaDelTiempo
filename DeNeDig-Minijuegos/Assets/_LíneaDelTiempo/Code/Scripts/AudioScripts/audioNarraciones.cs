@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class audioNarraciones : MonoBehaviour
 {
-    public string nombreclip;
 
-    private void Update()
+    
+
+    public void StopAnteriorNarracion(string nombreclip)
     {
-       
+        AudioManager.Instance.StopSound();
+        AudioManager.Instance.PlaySound2D("");
     }
 
-    public void Narracion()
+    public void SigNarracion(string nombreclip)
     {
+        AudioManager.Instance.StopSound();
         AudioManager.Instance.PlaySound2D(nombreclip);
     }
+
+
+    
+
 }
