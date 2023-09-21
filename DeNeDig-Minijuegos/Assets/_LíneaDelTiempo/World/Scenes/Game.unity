@@ -5492,7 +5492,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreClip: juego
-  nombreClipAnterior: menu
 --- !u!4 &1797718689
 Transform:
   m_ObjectHideFlags: 0

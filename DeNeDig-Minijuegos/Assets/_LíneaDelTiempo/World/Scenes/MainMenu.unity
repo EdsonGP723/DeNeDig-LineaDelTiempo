@@ -2614,7 +2614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574496143653884338, guid: ab28704362de34b45a05d01587953bcd, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5574496143653884338, guid: ab28704362de34b45a05d01587953bcd, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3319,6 +3319,12 @@ MonoBehaviour:
   - name: presionaJugar
     clip:
     - {fileID: 8300000, guid: e4bf8f28ae356da4ead19acc393a0228, type: 3}
+  - name: selecCarta
+    clip:
+    - {fileID: 8300000, guid: 59a0a2f0abddc1f469efad7523265069, type: 3}
+  - name: dejarCarta
+    clip:
+    - {fileID: 8300000, guid: fbe617a28b74c8c4c92008b0be8320fa, type: 3}
 --- !u!1 &696836485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,7 +4628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6148530824636815954, guid: f57aee6810072db47abe5b1749603056, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6148530824636815954, guid: f57aee6810072db47abe5b1749603056, type: 3}
       propertyPath: m_AnchorMax.x

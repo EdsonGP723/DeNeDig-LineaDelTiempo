@@ -22,6 +22,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        AudioManager.Instance.PlaySound2D("selecCarta");
         Debug.Log("OnBeginDrag");
         objBeingDraged = gameObject;
 
@@ -40,6 +41,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        AudioManager.Instance.PlaySound2D("dejarCarta");
         Debug.Log("OnEndDrag");
         objBeingDraged = null;
 
