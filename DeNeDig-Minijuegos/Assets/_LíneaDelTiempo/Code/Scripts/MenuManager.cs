@@ -9,18 +9,21 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private TMP_InputField userNameInputField;
     [SerializeField] private TextMeshProUGUI wariningField;
-    [SerializeField] private GameObject actualScreen;
-    [SerializeField] private GameObject nextScreen;
-    public void SetUserName()
+    [SerializeField] private GameObject idiomaScreen;
+    [SerializeField] private GameObject menuScreen;
+
+
+    private void Start()
     {
-        if (userNameInputField.text.Length < 5) { 
-            wariningField.gameObject.SetActive(true);
-            return;
-            }
-        PlayerPrefs.SetString("UserName", userNameInputField.text);
-        Debug.Log(PlayerPrefs.GetString("UserName"));
-        nextScreen.SetActive(true);
-        actualScreen.SetActive(false);
+        if (Globals.idiomaWasSelected){
+            idiomaScreen.SetActive(false);
+            menuScreen.SetActive(true);
+        }
+    }
+
+    public void idiomaSelected()
+    {
+        Globals.idiomaWasSelected = true;
     }
 
     public void SetLanguage(int language)
