@@ -2222,11 +2222,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1651512128}
         m_TargetAssemblyTypeName: Scenes, Assembly-CSharp
         m_MethodName: StartCor
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7993,7 +7993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a45fdd85abe62429a065e458c508d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 1
   fade: {fileID: 537385413}
 --- !u!4 &1651512129
 Transform:
