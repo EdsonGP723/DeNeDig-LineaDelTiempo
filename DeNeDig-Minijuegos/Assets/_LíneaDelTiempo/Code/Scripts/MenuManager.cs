@@ -11,13 +11,14 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI wariningField;
     [SerializeField] private GameObject idiomaScreen;
     [SerializeField] private GameObject menuScreen;
-
+    [SerializeField] private AnimationsManager animationsManager;
 
     private void Start()
     {
         if (Globals.idiomaWasSelected){
             idiomaScreen.SetActive(false);
             menuScreen.SetActive(true);
+            animationsManager.EntraMenu();
         }
     }
 

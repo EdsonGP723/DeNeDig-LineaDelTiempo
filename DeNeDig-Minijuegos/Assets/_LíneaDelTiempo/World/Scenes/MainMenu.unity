@@ -5989,6 +5989,7 @@ MonoBehaviour:
   wariningField: {fileID: 0}
   idiomaScreen: {fileID: 336409456}
   menuScreen: {fileID: 232038397}
+  animationsManager: {fileID: 1651512130}
 --- !u!4 &1340917688
 Transform:
   m_ObjectHideFlags: 0
@@ -7974,7 +7975,7 @@ GameObject:
   - component: {fileID: 1651512128}
   - component: {fileID: 1651512130}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AnimationManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
