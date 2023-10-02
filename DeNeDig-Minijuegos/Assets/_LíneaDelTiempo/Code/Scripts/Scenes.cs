@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Scenes : MonoBehaviour
 {
-    public int scene;
+    
     public GameObject fade;
 
-    public void StartCor(){
-        StartCoroutine(Cambio());
+    public void StartCor(int scene){
+        StartCoroutine(Cambio(scene));
 
     }
-   public IEnumerator Cambio(){
+   public IEnumerator Cambio(int scene){
         fade.SetActive(true);
         
         yield return new WaitForSeconds(1);
