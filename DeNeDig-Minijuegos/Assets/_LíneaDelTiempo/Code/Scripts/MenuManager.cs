@@ -30,5 +30,6 @@ public class MenuManager : MonoBehaviour
     public void SetLanguage(int language)
     {
         PlayerPrefs.SetInt("Idioma", language);
+        Debug.Log(PlayerPrefs.GetInt("Idioma"));
     }
 }

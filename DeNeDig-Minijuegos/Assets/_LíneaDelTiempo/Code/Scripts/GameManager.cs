@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Linq;
 using TMPro;
@@ -44,8 +45,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TMP_InputField userNameInputField;
     [SerializeField] private TextMeshProUGUI wariningField;
+    [SerializeField] private TextMeshProUGUI wariningField2;
     [SerializeField] private GameObject gameOverPanel;
-
+    [SerializeField] private GameObject checkButton;
     private int FinalScore;
     private void Awake()
     {
@@ -56,7 +58,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("UserName"));
         GetLevels();
         GenerateFichas();
-        PlayerPrefs.SetInt("Idioma", idioma);
+       // PlayerPrefs.SetInt("Idioma", idioma);
     }
 
 
@@ -188,12 +190,21 @@ public class GameManager : MonoBehaviour
 
     public void SetLeaderBoardEntry(string username, int score)
     {
-        LeaderboardCreator.UploadNewEntry(publicKey, username, score, ((msg) => {
-            LeaderboardCreator.ResetPlayer();
-            GetLeaderBoard();
-            GetPlayerPosition();
-        }));
-
+        
+            LeaderboardCreator.UploadNewEntry(publicKey, username, score, (msg) =>
+            {
+                LeaderboardCreator.ResetPlayer();
+                checkButton.GetComponent<Button>().enabled = false;
+                wariningField2.gameObject.SetActive(false);
+                GetLeaderBoard();
+                GetPlayerPosition();
+            }, (msg)=>
+            {
+                checkButton.GetComponent<Button>().enabled = true;
+                wariningField2.gameObject.SetActive(true);
+            });
+        
+     
        
     }
 
@@ -201,9 +212,11 @@ public class GameManager : MonoBehaviour
     {
         if (userNameInputField.text.Length < 5)
         {
+            wariningField2.gameObject.SetActive(false);
             wariningField.gameObject.SetActive(true);
             return;
         }
+        wariningField.gameObject.SetActive(false);
         PlayerPrefs.SetString("UserName", userNameInputField.text);
        
         SetLeaderBoardEntry(userNameInputField.text, FinalScore);
