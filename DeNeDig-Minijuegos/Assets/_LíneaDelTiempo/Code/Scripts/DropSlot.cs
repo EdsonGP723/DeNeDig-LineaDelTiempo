@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
@@ -8,10 +9,13 @@ public class DropSlot : MonoBehaviour, IDropHandler
 {
     public GameObject item;
 
-    [SerializeField] private TextMeshProUGUI yearLabel;
+    [SerializeField] public TextMeshProUGUI yearLabel;
     public int year;
 
     public bool Correct = false;
+
+    [SerializeField] public Image image;
+    
 
     private void Start()
     {

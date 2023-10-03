@@ -872,6 +872,7 @@ MonoBehaviour:
   myScore: {fileID: 1555508931}
   userNameInputField: {fileID: 1339651743}
   wariningField: {fileID: 845633726}
+  gameOverPanel: {fileID: 2145726242}
 --- !u!114 &237411636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1344,7 @@ MonoBehaviour:
   yearLabel: {fileID: 2032795415}
   year: 0
   Correct: 0
+  image: {fileID: 294680514}
 --- !u!1 &302910522
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,6 +4677,7 @@ MonoBehaviour:
   yearLabel: {fileID: 977858312}
   year: 0
   Correct: 0
+  image: {fileID: 1026738033}
 --- !u!114 &1026738033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5836,6 +5839,7 @@ MonoBehaviour:
   yearLabel: {fileID: 1444085972}
   year: 0
   Correct: 0
+  image: {fileID: 1368860700}
 --- !u!114 &1368860700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6470,7 +6474,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6501,9 +6505,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2145726242}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1626739836}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6511,7 +6515,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1626739837
 MonoBehaviour:
@@ -6949,6 +6953,7 @@ MonoBehaviour:
   yearLabel: {fileID: 707369499}
   year: 0
   Correct: 0
+  image: {fileID: 1793743315}
 --- !u!114 &1793743315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8208,6 +8213,7 @@ MonoBehaviour:
   yearLabel: {fileID: 483268896}
   year: 0
   Correct: 0
+  image: {fileID: 2098972131}
 --- !u!114 &2098972131
 MonoBehaviour:
   m_ObjectHideFlags: 0

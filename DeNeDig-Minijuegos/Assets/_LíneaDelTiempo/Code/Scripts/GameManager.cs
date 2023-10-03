@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TMP_InputField userNameInputField;
     [SerializeField] private TextMeshProUGUI wariningField;
+    [SerializeField] private GameObject gameOverPanel;
 
     private int FinalScore;
     private void Awake()
@@ -109,8 +110,11 @@ public class GameManager : MonoBehaviour
         
     }
   
-
     public void Check()
+    {
+        StartCoroutine("CheckCoroutine");
+    }
+    IEnumerator  CheckCoroutine()
     {
         
         time._timmerIsRunning = false;
@@ -119,23 +123,33 @@ public class GameManager : MonoBehaviour
         {
             if (slots[i].Correct)
             {
+                slots[i].image.color = Color.green;
+                slots[i].yearLabel.color = Color.green;
+
                 Score++;
+                yield return new WaitForSeconds(0.5f);
+            }
+            else
+            {
+                slots[i].image.color = Color.red;
+                slots[i].yearLabel.color = Color.red;
+                yield return new WaitForSeconds(0.5f);
             }
         }
         float finalScore = Score * Globals.Score;
-       
-
-
 
         aciertosLabel.text =Score + "/5";
 
-        AudioManager.Instance.PlaySound2D("exito");
-        AudioManager.Instance.StopMusic();
+        
 
         scoreLabel.text = Math.Round(finalScore).ToString();
 
         FinalScore = ((int)finalScore);
         GetLeaderBoard();
+        yield return new WaitForSeconds(0.5f);
+        AudioManager.Instance.PlaySound2D("exito");
+        AudioManager.Instance.StopMusic();
+        gameOverPanel.SetActive(true);
 
     }
 
