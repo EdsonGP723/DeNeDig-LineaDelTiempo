@@ -39,7 +39,11 @@ public class Disable : MonoBehaviour
         timeToDisplay += 1;
         float minutes = Mathf.FloorToInt(time/60);
         float seconds = Mathf.FloorToInt(time%60);
-        contador.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        contador.text = string.Format(seconds.ToString());
+        if (seconds <= 0)
+        {
+            contador.text = "";
+        }
     }
 
     public IEnumerator Off(){
