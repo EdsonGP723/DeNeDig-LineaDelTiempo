@@ -817,31 +817,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e47424aebba71f84c8a5c5a68f3029f3, type: 2}
   - {fileID: 11400000, guid: e09265010f2807645a1d049589188e6f, type: 2}
   - {fileID: 11400000, guid: 4c38e939ed44f5d439a7e5801af8e2fe, type: 2}
-  - {fileID: 11400000, guid: 2a6ce0938312ede4f8d1420be76fa89e, type: 2}
-  - {fileID: 11400000, guid: 58d4ccce1fe5bb741811af1db8d4e72d, type: 2}
-  - {fileID: 11400000, guid: b496362fe2714ea4caa51565a69b75ed, type: 2}
-  - {fileID: 11400000, guid: 46b1e5fe283c1b54e8cec918a92858d1, type: 2}
-  - {fileID: 11400000, guid: b7678201d10c93a4784d6b1a97a83cbc, type: 2}
-  - {fileID: 11400000, guid: 42cd0cdafc3c28844b1eae60b04b53ca, type: 2}
-  - {fileID: 11400000, guid: d2467ab29ebb4c3479c64a834791ff3d, type: 2}
-  - {fileID: 11400000, guid: c5b4981777a7bd6478fee1eb1eee5030, type: 2}
-  - {fileID: 11400000, guid: 7599d38c75f2d9b4ab6ab881bde1d7fb, type: 2}
-  - {fileID: 11400000, guid: 460a4ac6f2b23004fb4fde4aad12ce81, type: 2}
-  - {fileID: 11400000, guid: 029e53e129969e24a87d3d08c9754249, type: 2}
-  - {fileID: 11400000, guid: 7ea2d62e6feb2c9479a249983a479ed7, type: 2}
-  - {fileID: 11400000, guid: f8d96c105cbbdd944b9aa747637e1178, type: 2}
-  - {fileID: 11400000, guid: bef5c12aed1ccb34ba33847ca56f9973, type: 2}
-  - {fileID: 11400000, guid: 983c88ee9ca219e4cb32a16e7fcefdbe, type: 2}
-  - {fileID: 11400000, guid: f22d35d4954aa5e4db00a977de2af4a3, type: 2}
-  - {fileID: 11400000, guid: 84a4253e4132af445afd88368854057f, type: 2}
-  - {fileID: 11400000, guid: e56d447171f091d40b21c166902e2f7c, type: 2}
-  - {fileID: 11400000, guid: 2c9e6e28d700b7f47b5b11fe34e8d937, type: 2}
-  - {fileID: 11400000, guid: 55d625fc17724af4dabfc97406fc4893, type: 2}
-  - {fileID: 11400000, guid: 94b6279f9bf1f464e86f37a470051593, type: 2}
-  - {fileID: 11400000, guid: 4f70281986ec8814fb1bca46d96dd30b, type: 2}
-  - {fileID: 11400000, guid: 85647cd01fbf64c4cb60642835c91c6f, type: 2}
-  - {fileID: 11400000, guid: 216f7a333f5984a43a3e00b486f6d107, type: 2}
-  - {fileID: 11400000, guid: d2293dfb523f66d4bb01694c650a72b4, type: 2}
   Level02: []
   Level03: []
   ActualFichas: []
@@ -6315,7 +6290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.16188, y: 22.702003}
+  m_AnchoredPosition: {x: -0.16188, y: 22.702026}
   m_SizeDelta: {x: 84.089, y: 28.647003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576151510
