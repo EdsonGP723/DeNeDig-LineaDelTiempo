@@ -1459,6 +1459,18 @@ MonoBehaviour:
           m_StringArgument: btn1
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 218576061}
+        m_TargetAssemblyTypeName: audioNarraciones, Assembly-CSharp
+        m_MethodName: SigNarracion
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: cambiarFicha
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &361789133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3493,6 +3505,9 @@ MonoBehaviour:
   - name: exito
     clip:
     - {fileID: 8300000, guid: c1881ab721590494d9792a148440590d, type: 3}
+  - name: infoFicha
+    clip:
+    - {fileID: 8300000, guid: 1ca5f84c52a99dc4ea5fc6b90f19dc21, type: 3}
 --- !u!1 &696836485
 GameObject:
   m_ObjectHideFlags: 0
@@ -9233,7 +9248,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 04
+          m_StringArgument: infoFicha
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1862776888
