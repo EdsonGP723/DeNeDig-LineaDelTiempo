@@ -14327,6 +14327,9 @@ MonoBehaviour:
   - name: exito
     clip:
     - {fileID: 8300000, guid: c1881ab721590494d9792a148440590d, type: 3}
+  - name: cambiarFicha
+    clip:
+    - {fileID: 8300000, guid: 2f37ddb3bab8bf34f89bf868814c42fe, type: 3}
 --- !u!1 &658285983
 GameObject:
   m_ObjectHideFlags: 0
@@ -36595,7 +36598,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 02
+          m_StringArgument: 03
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1728604685
@@ -42104,7 +42107,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 02
+          m_StringArgument: cambiarFicha
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &2001294923
