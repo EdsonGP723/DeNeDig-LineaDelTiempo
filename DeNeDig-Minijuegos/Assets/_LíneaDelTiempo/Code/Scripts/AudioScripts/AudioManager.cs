@@ -19,9 +19,9 @@ public class AudioManager : MonoBehaviour
 	public bool CoroutineRun; 
 
 	
-	AudioSource musicSource;
+	public AudioSource musicSource;
 	AudioSource ambientSource;
-	AudioSource fxSource;
+	public AudioSource fxSource;
 
 	
 	SoundLibrary soundLibrary;
