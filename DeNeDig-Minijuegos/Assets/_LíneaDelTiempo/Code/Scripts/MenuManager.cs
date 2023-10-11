@@ -13,6 +13,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject menuScreen;
     [SerializeField] private AnimationsManager animationsManager;
 
+    [SerializeField] private Scenes sceneManager;
+    [SerializeField] private GameObject menuPanel;
+    [SerializeField] private GameObject reglasPanel;
+
+
     private void Start()
     {
         if (Globals.idiomaWasSelected){
@@ -25,6 +30,24 @@ public class MenuManager : MonoBehaviour
     public void idiomaSelected()
     {
         Globals.idiomaWasSelected = true;
+    }
+
+    public void Play()
+    {
+        if (Globals.firstPlay)
+        {
+          
+            reglasPanel.SetActive(true);
+            AudioManager.Instance.StopSound();
+            AudioManager.Instance.PlaySound2D("01");
+            Globals.firstPlay = false;
+            menuPanel.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Cambio de escena");
+            sceneManager.StartCor(1);
+        }
     }
 
     public void SetLanguage(int language)
