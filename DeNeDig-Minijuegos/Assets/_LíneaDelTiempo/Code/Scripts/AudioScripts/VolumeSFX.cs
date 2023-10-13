@@ -10,6 +10,7 @@ public class VolumeSFX : MonoBehaviour
     void Start()
     {
         sliderSFX.value = PlayerPrefs.GetFloat("volumenSFX", 0.5f);
+        PlayerPrefs.SetFloat("volumenSFX", sliderSFX.value);
         AudioManager.Instance.SetVolume(PlayerPrefs.GetFloat("volumenSFX"), AudioManager.AudioChannel.Music);
     }
 
