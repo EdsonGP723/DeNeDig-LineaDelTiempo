@@ -20010,6 +20010,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 856654588}
+        m_TargetAssemblyTypeName: AudioBTN, Assembly-CSharp
+        m_MethodName: BtnSonido
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: btn1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &856654588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22340,6 +22352,7 @@ GameObject:
   - component: {fileID: 956855130}
   - component: {fileID: 956855133}
   - component: {fileID: 956855132}
+  - component: {fileID: 956855134}
   - component: {fileID: 956855131}
   m_Layer: 5
   m_Name: boton Settings
@@ -22424,6 +22437,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 956855134}
+        m_TargetAssemblyTypeName: AudioBTN, Assembly-CSharp
+        m_MethodName: BtnSonido
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: btn1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &956855132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22462,6 +22487,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956855129}
   m_CullTransparentMesh: 1
+--- !u!114 &956855134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956855129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780393817cbd0f542bb0627b02fdfe87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957483123
 GameObject:
   m_ObjectHideFlags: 0
@@ -25281,6 +25318,7 @@ GameObject:
   - component: {fileID: 1117038875}
   - component: {fileID: 1117038878}
   - component: {fileID: 1117038877}
+  - component: {fileID: 1117038879}
   - component: {fileID: 1117038876}
   m_Layer: 5
   m_Name: Boton ScoreBoard
@@ -25365,6 +25403,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1117038879}
+        m_TargetAssemblyTypeName: AudioBTN, Assembly-CSharp
+        m_MethodName: BtnSonido
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: btn1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117038877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25403,6 +25453,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117038874}
   m_CullTransparentMesh: 1
+--- !u!114 &1117038879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117038874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780393817cbd0f542bb0627b02fdfe87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1118050129
 PrefabInstance:
   m_ObjectHideFlags: 0
