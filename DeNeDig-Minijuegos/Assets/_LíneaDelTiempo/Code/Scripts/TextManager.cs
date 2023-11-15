@@ -19,16 +19,6 @@ public class TextManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-       //GetData();
-
-    }
-
-    private void GetData()
-    {
-      
-       
-
     }
 
     private string result;
@@ -39,11 +29,8 @@ public class TextManager : MonoBehaviour
         {
             
             if (id.ToString() == data[i])
-            {
-                
+            {   
                 result = data[i + PlayerPrefs.GetInt("Idioma")+1];
-                
-
             }
            
         }
