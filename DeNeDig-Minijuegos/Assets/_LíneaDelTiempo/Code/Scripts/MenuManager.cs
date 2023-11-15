@@ -17,6 +17,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Scenes sceneManager;
     [SerializeField] private GameObject menuPanel;
     [SerializeField] private GameObject reglasPanel;
+    [SerializeField] private GameObject omitirButton;
 
     private static string publicKey = "4d20065bde55aba7263e07336e9700cc9ed70e2784ecc740ae4253ae301e2e5a";
 
@@ -48,6 +49,7 @@ public class MenuManager : MonoBehaviour
             AudioManager.Instance.PlaySound2D("01");
             Globals.firstPlay = false;
             menuPanel.SetActive(false);
+            omitirButton.SetActive(true);
         }
         else
         {
