@@ -49,10 +49,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject checkButton;
     private int FinalScore;
-    private void Awake()
-    {
-        
-    }
+  
+
     void Start()
     {
         Debug.Log(PlayerPrefs.GetString("UserName"));

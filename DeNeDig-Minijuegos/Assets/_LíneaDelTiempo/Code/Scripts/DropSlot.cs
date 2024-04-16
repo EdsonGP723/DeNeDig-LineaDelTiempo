@@ -44,12 +44,14 @@ public class DropSlot : MonoBehaviour, IDropHandler
 
     private void Update()
     {
+        // Si hay un objeto y no está en la ranura actual
         if (item != null && item.transform.parent != transform)
         {
             Debug.Log("Remover");
-            
-           
+
+            // Elimina el objeto de la ranura
             item = null;
+            // Establece el objeto como hijo del objeto que está siendo arrastrado
             item = DragHandler.objBeingDraged;
             if (item == null) return;
             item.transform.SetParent(DragHandler.objBeingDraged.transform);

@@ -13,15 +13,10 @@ public class audios : MonoBehaviour
         MusicaFade(nombreClip);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     public void MusicaFade(string nombreclip)
-    {
-        
+    {     
         StartCoroutine(AudioManager.Instance.PlayMusicFade(nombreclip, 5f));
     }
 

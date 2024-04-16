@@ -33,7 +33,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         canvasGroup.blocksRaycasts = false;
 
     }
-
+    // Se llama mientras se arrastra el objeto
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
@@ -48,15 +48,10 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         canvasGroup.blocksRaycasts = true;
         if (transform.parent == itemDraggerParent)
         {
+            // Devuelve el objeto a su posición inicial y su padre original
             transform.position = startPosition;
             transform.SetParent(startParent);
         }
     }
 
-   
-
-    private void Update()
-    {
-
-    }
 }
