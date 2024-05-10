@@ -23,10 +23,8 @@ MonoBehaviour:
   - idioma 02
   - idioma 03
   description:
-  - "Es un entorno de escritorio; es decir, un paquete de software dise\xF1ado para
-    interactuar de manera gr\xE1fica e intuitiva con el sistema operativo de tu computadora.
-    Este sistema se encuentra disponible en m\xE1s de 160 idiomas y es completamente
-    intuitivo para ayudar al usuario a trabajar de manera simple y veloz"
+  - " Es un entorno de escritorio que permite una interacci\xF3n gr\xE1fica e intuitiva
+    con el sistema operativo, disponible en m\xE1s de 160 idiomas."
   - idioma 02
   - idioma 03
   image: {fileID: 21300000, guid: 07ae18718d47cd74187dea839b013581, type: 3}

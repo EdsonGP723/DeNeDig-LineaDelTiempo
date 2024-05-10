@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Slot
   - ItemDraggerParent
+  - GlossaryItem
   layers:
   - Default
   - TransparentFX

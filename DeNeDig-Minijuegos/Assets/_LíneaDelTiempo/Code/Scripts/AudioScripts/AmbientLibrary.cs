@@ -6,7 +6,9 @@ public class AmbientLibrary : MonoBehaviour
 {
 	public AmbientGroup[] ambientGroups;
 
-	Dictionary<string, AudioClip> groupDictionary = new Dictionary<string, AudioClip>();
+
+    // Diccionario que asigna nombres de grupos a sus clips de audio correspondientes
+    Dictionary<string, AudioClip> groupDictionary = new Dictionary<string, AudioClip>();
 
 	void Awake()
 	{
@@ -18,7 +20,8 @@ public class AmbientLibrary : MonoBehaviour
 
 	public AudioClip GetClipFromName(string name)
 	{
-		if (groupDictionary.ContainsKey(name))
+        // Verifica si el diccionario contiene el nombre del grupo
+        if (groupDictionary.ContainsKey(name))
 		{
 			AudioClip ambient = groupDictionary[name];
 			return ambient;
@@ -26,7 +29,8 @@ public class AmbientLibrary : MonoBehaviour
 		return null;
 	}
 
-	[System.Serializable]
+    // Clase que define un grupo de sonido ambiental
+    [System.Serializable]
 	public class AmbientGroup
 	{
 		public string name;

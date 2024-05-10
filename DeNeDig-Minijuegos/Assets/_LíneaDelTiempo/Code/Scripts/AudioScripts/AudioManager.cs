@@ -66,8 +66,8 @@ public class AudioManager : MonoBehaviour
 		SetVolume(ambientVolume, AudioChannel.Ambient);
 	}
 
-	
-	public void SetVolume(float volumePercent, AudioChannel channel)
+    //establecer el volumen de un canal de audio específico
+    public void SetVolume(float volumePercent, AudioChannel channel)
 	{
 		switch (channel)
 		{
@@ -92,7 +92,8 @@ public class AudioManager : MonoBehaviour
 	}
 
 	
-	// Cunado delay es 0 = No delay
+	
+	// Cuando delay es 0 = No delay
 	
 	public void PlayMusic(string musicName, float delay)
 	{
@@ -169,7 +170,7 @@ public class AudioManager : MonoBehaviour
 	}
 
 	
-	// Play ambient sound with delay 0 = No delay
+	 //  play ambient sound with delay 0 = No delay
 	
 	public void PlayAmbient(string ambientName, float delay)
 	{

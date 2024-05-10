@@ -23,10 +23,9 @@ MonoBehaviour:
   - idioma 02
   - idioma 03
   description:
-  - "Aplic\xF3 la nanotecnolog\xEDa al tratamiento del c\xE1ncer cerebral, con resultados
-    asombrosos. Usando part\xEDculas microsc\xF3picas llenas de medicamentos de titanio
-    y zirconio, dise\xF1\xF3 terapias para atacar tumores cerebrales sin necesidad
-    de cirug\xEDa o quimioterapia"
+  - "Us\xF3 nanotecnolog\xEDa para tratar c\xE1ncer cerebral con part\xEDculas microsc\xF3picas
+    de titanio y zirconio, dise\xF1ando terapias que atacan tumores sin cirug\xEDa
+    ni quimioterapia."
   - idioma 02
   - idioma 03
   image: {fileID: 21300000, guid: 9fa96fb18ed4f1049a922e139d64efb6, type: 3}

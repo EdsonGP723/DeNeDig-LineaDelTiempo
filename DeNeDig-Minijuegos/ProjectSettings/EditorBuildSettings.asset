@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/MainMenu.unity"
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/TimelineMenu.unity"
+    guid: ad85ef3d665d41844aa9fbda33f1f6e0
+  - enabled: 1
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/InventoresMexicanosMenu.unity"
     guid: eca356f1912f6794aa3f74425a70a089
   - enabled: 1
-    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/Game.unity"
+    path: "Assets/_L\xEDneaDelTiempo/World/Scenes/InventoresMexicanosGame.unity"
     guid: bd24bc724b66dd545bb51e4c3e8510cf
   m_configObjects: {}
